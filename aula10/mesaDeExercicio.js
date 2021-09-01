@@ -72,8 +72,48 @@ console.log([10, 3, 10, 4].reduce(somarArray))
 // join([“t”,"c","h","a,"u"]) deve retornar a string "tchau".
 
 let funcaoJoin = function(valorA, valorB){
+    console.log(valorA, valorB)
     return valorA+valorB;
 }
 
-
 console.log(["t","c","h","a","u"].reduce(funcaoJoin))
+
+//======================-------- 1 -------==================
+// Exercício sobre lista de filmes
+
+let filmes1 = ["star wars", "matrix",  "mr. robot", "o preço do amanhã",  "a vida é bela"]
+let filmes2 = ["toy story", "finding Nemo", "kung-fu panda", "wally", "fortnite"]
+let filmesUp = []
+
+for(let i=0; i<filmes1.length;i++){
+    filmesUp.push(filmes1[i].toUpperCase());
+}
+console.log(filmesUp)
+
+
+const unirFilmes = function(arrayA, arrayB){
+    filmes1 = filmes1.concat(filmes2)
+    var jogo = filmes1.pop();
+    return console.log(filmes1, jogo);
+}
+
+unirFilmes(filmes1, filmes2)
+
+
+const asiaScores = [8, 10, 6, 9, 10, 6, 6, 8, 4];
+const euroScores = [8, 10, 6, 8, 10, 6, 7, 9, 5];
+
+const results = []
+function comparaArrays(array1, array2) {
+    for(let i=0; i<array1.length; i++){
+        if(array1[i] == array2[i]){
+            results.push(true)
+        }else{
+            results.push(false)
+        }
+    }    
+    
+    return results;
+}
+
+console.log(comparaArrays(asiaScores, euroScores))
