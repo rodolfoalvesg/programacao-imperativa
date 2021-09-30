@@ -8,8 +8,17 @@ let calculadora = {
         }else{
             return "Não é possível dividir por ( 0 )"
         }
-        
+    },
+    media: (a, b, c) => {
+        return calculadora.somar(calculadora.somar(a, b), c) / 3
+    },
+    calculaPercentual: (total, percentual) => {
+        return calculadora.multiplicar(calculadora.dividir(total/100), percentual)
+    },
+    gerarPercentual: (a, b) => {
+        return calculadora.dividir(calculadora.multiplicar(a, 100), b)
     }
+
 }
 
 module.exports = calculadora;
