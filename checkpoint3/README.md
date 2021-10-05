@@ -1,5 +1,7 @@
 #README.md
 
+O ARQUIVO index.js é o principal.
+
 O primeiro módulo abrange até o item 6.
 Para exibir o valor do método basta usar o console.log()
 
