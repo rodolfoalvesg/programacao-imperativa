@@ -29,17 +29,19 @@ console.log(curso.verificaStatusTodos()) // Lista o status de todos os alunos em
 /*********** PARTE DO MÓDULO DE ESTUDANTES *********/
 
 
-//curso.verificaStatus('Ana') // Ativa a função verifica status
+//console.log(curso.verificaStatus('Ana')) // Ativa a função verifica status
 //curso.verificaStatus('Maria')
 //curso.verificaStatus('Alice')
 
 
-//curso.listaAlunos[0].calcularMedia(curso.listaAlunos[0].notas) // ativa a função calcular média
+//console.log(curso.listaAlunos[0].calcularMedia(curso.listaAlunos[0].notas)) // ativa a função e exibe a média do primeiro aluno
 //curso.listaAlunos[1].calcularMedia(curso.listaAlunos[1].notas)
 //curso.listaAlunos[2].calcularMedia(curso.listaAlunos[2].notas)
 
-//curso.listaAlunos[0].faltas(curso.listaAlunos[0].qtd_faltas) // Ativa a função de faltas
+//console.log(curso.listaAlunos[0].faltas(curso.listaAlunos[0].qtd_faltas)) // Ativa a função de faltas e exibe as faltas
 //curso.listaAlunos[1].faltas(curso.listaAlunos[1].qtd_faltas)
 //curso.listaAlunos[2].faltas(curso.listaAlunos[2].qtd_faltas)
 
 // console.log(curso.listaAlunos) // exibe todos.
+
+// console.log(curso.verificaStatusTodos()) 
